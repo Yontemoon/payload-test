@@ -12,5 +12,13 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
+  upload: {
+    // staticDir: path.resolve(__dirname, '../../media'),
+    formatOptions: {
+      format: 'jpg',
+      options: {
+        quality: 75,
+      },
+    },
+  },
 }

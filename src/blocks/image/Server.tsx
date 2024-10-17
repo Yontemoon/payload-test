@@ -5,7 +5,7 @@ import { Media } from '@/payload-types'
 const ImageBlockServer = ({ image }: { image: Media }) => {
   return (
     <div>
-      <Image src={image.url as string} alt={image.alt} width={200} height={100} />
+      <Image src={image.url as string} alt={image.alt} width={200} height={100} priority />
     </div>
   )
 }
